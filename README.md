@@ -1,7 +1,7 @@
 # MultiClass Image Classification
-To learn Artificial Neural Network *Wonders Across World*
-> Artificial Neural Network are inspired by human brain,
-As inspired they are not completely biologically similar but learn correlations of images with help of multiple weights dedicated to the input according to its importance. 
+Aim to make Artificial Neural Network to learn *Wonders Across World*
+> Artificial Neural Network are inspired by human brain,<br>
+As inspired they are not complete biologically similar but learn correlations of images with help of multiple weights dedicated to the input according to its importance and according to the type of Neural Network characteristic.
 ## Data Preprocessing
 Data Gathered by downloading Google Images with [Python Library](https://pypi.org/project/google_images_download/) 
 
@@ -17,7 +17,7 @@ CNN contains multiple layers like *Convolution Layer, Maxpooling Layer, Average 
 
 
 ## Transfer Learning 
-Transfer Learning is a process where already pretrained model on one task is repurposed for a second similar/related task.<br> It gives features like saving training time, better performance without needing lot of data. Weights of pretrained model are already trained well so it can cut short time and computational cost. 
+Transfer Learning is a process where already pretrained model on one task is repurposed for a second similar/related task.<br> It gives features like *saving training time, better performance without needing lot of data*. Weights of pretrained model are already trained well so it can cut short time and computational cost. <br>
 [Here](https://www.it4nextgen.com/keras-image-classification-models/) is list of best pretrained models for transfer learning. <br>
 ## Data Preview
 1 | 2 | 3 |
@@ -35,10 +35,10 @@ Transfer Learning is a process where already pretrained model on one task is rep
 |![image](https://raw.githubusercontent.com/prasadpatil99/multiclass_image_classification/master/assets/burj%20khalifa.jpeg)  | ![image](https://raw.githubusercontent.com/prasadpatil99/multiclass_image_classification/master/assets/Roman%20Colosseum.jpg) | ![image](https://raw.githubusercontent.com/prasadpatil99/multiclass_image_classification/master/assets/machu%20picchu.jpg)|
 |Burj Khalifa|Roman Colosseum |Machu Pichu|
 
-### Dataset
+## Dataset
 *Dataset can be obtained from [here](https://drive.google.com/open?id=1fMHqRMeiq-i5iaNryW1oqmD5tlcDWOow)*
 
-### Dependencies 
+## Dependencies 
 ``` sh
 $ pip3 install --user --upgrade tensorflow
 $ pip install Keras
@@ -47,9 +47,9 @@ $ pip install opencv2
 $ pip install scikit-learn
 ```
 
-### References 
-https://keras.io/
+## Reference
+https://keras.io/ <br>
 Readme - https://github.com/flekhulani/Car-Recognition
 
-### Author
+## Author
 - *Prasad Patil*
