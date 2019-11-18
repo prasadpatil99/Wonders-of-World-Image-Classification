@@ -1,31 +1,24 @@
-### MultiClass Image Classification
-**Aim to make Artificial Neural Network to learn Wonders Across World**
+# MultiClass Image Classification
+To learn Artificial Neural Network *Wonders Across World*
 > Artificial Neural Network are inspired by human brain,
 As inspired they are not completely biologically similar but learn correlations of images with help of multiple weights dedicated to the input according to its importance. 
-Despite of this multiple layers like Convolution, MaxPooling, Dense, Flatten Layer are defined to complete the learning process, these layers can change accordingly for better learning depicted by accuracy.
+## Data Preprocessing
+Data Gathered by downloading Google Images with [Python Library](https://pypi.org/project/google_images_download/) 
 
-## Convolution Layer
-Input images due to noise or unimportant parts in image can hold unsignificance memory and loss of computational power, here convolutional layer helps in. Convolution layer contains set of filters whose parameters are smaller than input volume.  
-![](https://cdn-media-1.freecodecamp.org/images/Gjxh-aApWTzIRI1UNmGnNLrk8OKsQaf2tlDu)
-This filter is slided across the width and height of the input images and the dot products are calculated.
-![](https://miro.medium.com/max/447/1*nYf_cUIHFEWU1JXGwnz-Ig.gif)
-Since the size of filter are smaller than input, each neuron learns that particular region. In short, the filter size is equal to size of neuron. Hence neurons here contains summary of input images without any loss.
+## CNN
+Model consist of learning from Convolution Neural Network (CNN).<br>
+CNN contains multiple layers like *Convolution Layer, Maxpooling Layer, Average Pooling, Flatten Layer.<br>*
+ - **Convolution Layer** - *Convolution layer contains set of filters whose parameters are smaller than input. This filter is slided across the width and height of the input images and the dot products are calculated.Since the size of filter are smaller than input, each neuron learns that particular region. In short, the filter size is equal to size of neuron. Hence neurons here contains summary of input images without any loss.*
+ - **Maxpooling Layer** - *Maxpooling is similar to convolution layer where image is slided through out, only difference is there is no matrix multiplication or dot product with filter instead maxpooling returns the feature having maximum value or greater correlation in an image. Hence neurons here hold most significance and sharpest feature of an image*
+ ![](https://miro.medium.com/max/1421/1*2SWb6CmxzbPZijmevFbe-g.jpeg)
+ - **Flattening Layer** - *It is used at a final stage to convert multi dimensional vector to one dimensional or in a single column* 
 
-### Max Pooling Layer
-Maxpooling is similar to convolution layer where image is slided through out, only difference is there is no matrix multiplication or dot product with filter instead maxpooling returns the feature having maximum value or greater correlation in an image.
-![](https://raw.githubusercontent.com/prasadpatil99/multiclass_image_classification/master/assets/maxpool.png) 
-Hence neurons here hold most significance and sharpest feature of an image
+*For executing CNN in [Google Colab](https://colab.research.google.com/github/prasadpatil99/multiclass_image_classification/blob/master/Data%20Processing.ipynb)*<br>
 
-### Dense Layer
-Regular hidden layer carrying weights from input neuron to output neuron
 
-### Activation function 
-Activation function is a node that is put at the end of or in between Neural Networks. They help to decide that should neuron activated or not. The activation function is the non linear transformation that is done over the input images. For types of activation funtion and its prameters [click](https://keras.io/activations/)
-
-### Flattening Layer
-Flattening Layer is used at a final stage to convert multi dimensional vector to one dimensional or a single column  
-![](https://miro.medium.com/max/481/1*GLQjM9k0gZ14nYF0XmkRWQ.png)
-
+## Transfer Learning 
+Transfer Learning is a process where already pretrained model on one task is repurposed for a second similar/related task.<br> It gives features like saving training time, better performance without needing lot of data. Weights of pretrained model are already trained well so it can cut short time and computational cost. 
+[Here](https://www.it4nextgen.com/keras-image-classification-models/) is list of best pretrained models for transfer learning. <br>
 ## Data Preview
 1 | 2 | 3 |
 |---|---|---|
@@ -42,9 +35,8 @@ Flattening Layer is used at a final stage to convert multi dimensional vector to
 |![image](https://raw.githubusercontent.com/prasadpatil99/multiclass_image_classification/master/assets/burj%20khalifa.jpeg)  | ![image](https://raw.githubusercontent.com/prasadpatil99/multiclass_image_classification/master/assets/Roman%20Colosseum.jpg) | ![image](https://raw.githubusercontent.com/prasadpatil99/multiclass_image_classification/master/assets/machu%20picchu.jpg)|
 |Burj Khalifa|Roman Colosseum |Machu Pichu|
 
-**Dataset** can also be obtained from here
-<br>
-*Other dataset can be use by changing preference here*
+### Dataset
+*Dataset can be obtained from [here](https://drive.google.com/open?id=1fMHqRMeiq-i5iaNryW1oqmD5tlcDWOow)*
 
 ### Dependencies 
 ``` sh
@@ -56,8 +48,8 @@ $ pip install scikit-learn
 ```
 
 ### References 
-https://keras.io/ <br>
+https://keras.io/
 Readme - https://github.com/flekhulani/Car-Recognition
 
 ### Author
-- Prasad Patil
+- *Prasad Patil*
