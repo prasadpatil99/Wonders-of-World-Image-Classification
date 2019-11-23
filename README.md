@@ -48,8 +48,8 @@ $ pip install scikit-learn
 ```
 
 ## Reference
-https://keras.io/ <br>
-Readme - https://github.com/flekhulani/Car-Recognition
+ - https://keras.io/ <br>
+ - Readme - https://github.com/flekhulani/Car-Recognition
 
 ## Author
 - *Prasad Patil*
